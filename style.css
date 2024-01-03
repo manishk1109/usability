@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryTextColor: #183b56;
+    --secondaryTextColor: #577592;
+    --accentColor: #2294ed;
+    --accentColorDark: #1d69a3;
+    --paddingInLineSection: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primaryTextColor);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondaryTextColor);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.smallBoldText{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+   max-width: 1180px;
+   margin-inline: auto;
+  padding: var(--paddingInLineSection);
+  overflow: hidden;
+}
+
+
+
+.hoverLink{
+    color: var(--primaryTextColor);
+}
+
+.hamburger{
+    display: none;
+}
+
+.hoverLink:hover{
+    color: var(--secondaryTextColor);
+    transition: 0.2s ease-out;
+}
+
+.signIn{
+    border: 0.5px solid var(--secondaryTextColor);
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 700;
+    transition: 0.2s ease-out;
+    color: var(--secondaryTextColor);
+}
+
+.signIn:hover{
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+}
+
+.signUp{
+    border: 0.5px solid var(--secondaryTextColor);
+    background-color: var(--accentColor);
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: 2sec ease-out;
+    color: white;
+}
+
+.signUp:hover{
+    color: var(--accentColorDark);
+}
+.topBanner{
+    background-image: url(./assest/asset\ 30.png);
+    background-color: #4fb3d4;
+    background-size: 300px;
+   
+}
+
+.bannerText{
+    color: white;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+
+}
+
+.companyLogo img{
+    width: 200px;
+}
+
+.mainNav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navLinks {
+    flex-basis: 700px;
+   
+}
+
+.navLinks ul{
+    
+    gap: 30px;
+}
+
+header{
+    padding: 50px var(--paddingInLineSection) 0;
+}
+
+.headerSection{
+    justify-content: center;
+    gap: 50px;
+}
+
+.leftHeader{
+    max-width: 40vw;
+}
+
+.leftHeader h1{
+    margin-top: 20px;
+    
+}
+
+
+.rightHeader img{
+    
+    width: 100%;
+}
+
+.getStarted{
+    margin: 20px;
+}
+.companiesHeader{
+    text-align: center;
+    margin-block: 30px;
+}
+
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo{
+    height: 46px;
+}
+
+.featuresSection{
+    background-image: url(assest/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.featuresHeader{
+    text-align: center;
+}
+
+.featuresHeaderText{
+    margin-bottom: 20px;
+}
+
+.featuresSectionArea{
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.featureCard{
+    width: 30%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.bigFeatureSection{
+    margin-top: 80px;
+}
+
+#flexRevsre{
+    flex-direction: row-reverse;
+   }
+
+
+
+.featureSectionImage img{
+    width: 100%;
+}
+
+.feature{
+    gap: 50px;
+}
+
+.pHeader{
+    margin-bottom:15px ;
+}
+
+.featureText h3{
+    margin-bottom: 15px;
+}
+
+.exampleArea{
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.exampleCardBox{
+    width: 23%;
+    background-color: black;
+    min-height: 300px;
+    position: relative;
+    
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assest/asset\ 35.jpeg);
+    background-size: cover;
+   
+
+}
+
+.exampleCardBox h3{
+    color: white;
+    display: inline-block;
+    align-content: end;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.exampleCardBox:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assest/asset\ 34.jpeg);
+    background-size: cover;
+
+}
+
+.exampleCardBox:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assest/asset\ 36.jpeg);
+    background-size: cover;
+
+}
+
+.exampleCardBox:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(assest/asset\ 37.jpeg);
+    background-size: cover;
+
+}
+
+.exampleCardBox:hover{
+    box-shadow: 0 0 10px #888;
+    transition: 0.2sec ease-out;
+}
+
+.ctaSection{
+    /* height: 45vh; */
+    width: 100%;
+    background-color: var(--primaryTextColor);
+
+}
+
+.ctaSectionText{
+    flex-direction: column;
+    gap: 50px;
+    padding: 120px var(--paddingInLineSection) 80px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.subFooter{
+    background-color: #ebf2fa;
+}
+
+.subFooterContent{
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 80px var(--paddingInLineSection) 50px;
+}
+
+.subFooterList{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.footer{
+    background: #b9cde4;
+}
+
+.footerContent{
+    padding: var(--paddingInLineSection);
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .navLinks{
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        right: -100%;
+        transition: 1.5s ease-in-out;
+    }
+
+    .active{
+        right: 0;
+        
+    }
+
+    .navLinks ul{
+        flex-direction: column;
+    }
+
+
+    .mainNav{
+        overflow: initial;
+    }
+
+    .hamburger{
+        display: inline;
+    }
+
+    .featureCard{
+        width: 45%;
+        justify-content: space-evenly;
+    
+    }
+
+    .exampleCardBox{
+        width: calc(50% - 10px);
+
+    }
+    
+}
+
+@media screen and (max-width:479px) {
+    :root{
+        --paddingInLineSection: 10px
+    }
+
+    .headerSection{
+        flex-direction: column-reverse;
+    }
+
+    .signUp{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    
+
+    .leftHeader{
+        max-width: 100vw;
+        text-align: center;
+
+    }
+
+    .featureCard{
+        width: 90%;
+        justify-content: space-evenly;
+    
+    }
+
+    .feature , #flexRevrse{
+        flex-direction: column;
+    }
+
+   .featureSectionImage img{
+    width: 100%;
+   }
+
+   .subFooterContent{
+    flex-direction: column;
+    gap:40px ;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .subFooterList{
+    align-items: center;
+   }
+
+
+    
+}
+
+
+
+
+
